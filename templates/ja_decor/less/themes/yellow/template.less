@@ -1,0 +1,161 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+
+// ---------------------------------------------------------
+// MAIN TEMPLATE STYLES
+// ---------------------------------------------------------
+
+// Offcanvas
+// ----------------------------
+html .off-canvas-toggle {
+  border-left: 1px solid @t3-border-color;
+  color: @gray;
+
+  &:hover,
+  &:focus {
+    background: none;
+    color: darken(@brand-primary,10%);
+    border-color: @t3-border-color; 
+  }
+}
+
+
+// Slideshow
+// -----------------------------
+.has-slideshow .t3-mainbody {
+  background: url("@{t3-theme-image-path}/mainbody-bg.png") no-repeat left top;
+}
+
+// Button
+// ----------------------------
+.background-primary .btn-primary {
+  background: rgba(0,0,0,0.3);
+  border: 0;
+}
+
+// Body
+// ---------------------------
+.t3-wrapper {
+  background: url("@{t3-theme-image-path}/bg.gif")!important;
+}
+
+.t3-mainbody > .row {
+  background: url("@{t3-theme-image-path}/mainbody-bg-3.png") no-repeat left bottom;
+}
+
+.has-masthead .t3-mainbody {
+  background: url("@{t3-theme-image-path}/subbody-bg.png") no-repeat top left;
+}
+
+.t3-masthead {
+  background: darken(@gray-darker,6%);
+}
+
+
+// -----------------------------
+// EASYBLOG
+// -----------------------------
+#ezblog-body .blog-post .blog-title a:hover,
+#ezblog-body .blog-post .blog-title a:focus,
+#ezblog-body .blog-post .blog-title a:active ,
+#eblog-wrapper .list-pagination li b,
+#ezblog-menu .blog-navi .user-form form .input:focus,
+#ezblog-body ul.featured-entries .featured-title a:hover,
+body #ezblog-dashboard a,
+#ezblog-dashboard .ui-stream li.stream-load a:hover,
+#ezblog-dashboard .ui-item-content .ui-entry-meta li a:hover,
+#ezblog-dashboard .ui-item-content .ui-entry-meta li a:active,
+#ezblog-dashboard .ui-item-content .ui-entry-meta li a:focus,
+#ezblog-body .blog-read .blog-navi li a:hover  {
+  color: @brand-primary;
+}
+
+#eblog-wrapper #section-author,
+body #eblog-dialog .button,
+#ezblog-body .profile-stats li span.traits,
+#eblog-search .search-button button.button-search,
+.slideshow .nivo-directionNav a:hover,
+#eblog-wrapper .toggle-editor a:focus {
+  background: @brand-primary;
+}
+
+body #eblog-wrapper .ui-button:hover,
+body #eblog-wrapper .ui-button:active,
+body #eblog-wrapper .ui-button:focus,
+body #eblog-dialog .dialog-actions .button:hover,
+body #eblog-dialog .dialog-actions .button:active,
+body #eblog-dialog .dialog-actions .button:focus,
+body #ezblog-dashboard .buttons.pressed,
+body #ezblog-dashboard .buttons:hover,
+body #ezblog-dashboard .buttons:active,
+body #ezblog-dashboard .buttons:focus,
+body #ezblog-dashboard .button:hover,
+body #ezblog-dashboard .button:active,
+body #ezblog-dashboard .button:focus,
+#ezblog-body .profile-stats ul.active-bloggers a.avatar:hover img.avatar {
+  border-color: @brand-primary!important;
+  color: @brand-primary!important;
+}
+
+body #ezblog-dashboard a:hover,
+#ezblog-dashboard .ui-stream li.stream-load a:hover {
+  color: darken(@brand-primary,10%)!important;
+  border-color: darken(@brand-primary,10%)!important;
+}
+
+
+// ---------------------------------
+// MIJOSHOP
+// ---------------------------------
+#header_oc {
+  background: darken(@brand-primary,10%);
+}
+
+.box-product-list .product-item-inner .name a:hover,
+.box-product-list .product-item-inner .name a:focus,
+.box-product-list .product-item-inner .name a:active,
+.ja-product-grid .product-item .desc .name a:hover,
+.ja-product-grid .product-item .desc .name a:focus,
+.ja-product-grid .product-item .desc .name a:active,
+.ja-product-grid .product-item .actions .name a:hover,
+.ja-product-grid .product-item .actions .name a:focus,
+.ja-product-grid .product-item .actions .name a:active,
+.product-grid > div:hover .name a,
+.product-grid .name a:hover,
+.product-grid .name a:focus,
+.product-grid .name a:active,
+.ja-product-grid > div:hover .name a,
+.ja-product-grid .name a:hover,
+.ja-product-grid .name a:focus,
+.ja-product-grid .name a:active,
+.product-list .name a:hover,
+.product-list .name a:focus,
+.product-list .name a:active,
+.pagination .links b,
+.pagination .links a:hover,
+.pagination .links a:focus,
+.pagination .links a:active,
+.htabs a.selected,
+.htabs a:hover,
+.htabs a:focus,
+.htabs a:active,
+.content_oc ul li a:hover,
+.cart-info tbody .price, .cart-info tbody .total,
+.cart-total tr td:last-child,
+#footer_oc .column a:hover,
+#footer_oc .column a:focus,
+#footer_oc .column a:active {
+  color: @brand-primary;
+}
+
+#header_oc #cart .heading a sup,
+.slideshow .nivo-directionNav a:hover {
+  background: @brand-primary;
+}
+
+.product-list .wishlist a:hover,
+.product-list .compare a:hover {
+  background-color: @brand-primary;
+  border-color: @brand-primary;
+}

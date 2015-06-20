@@ -1,0 +1,272 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Include Variables and Mixins
+
+.ja-ss-slideshow {
+	position: relative;
+	height: 309px;
+}
+
+.ja-ss-loading:before {
+	content: "";
+	display: block;
+	background: url("@{t3-image-path}/slideloading.gif") no-repeat center center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 5;
+}
+ 
+.ja-ss-wrap {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.ja-ss-items {
+	width: 100%;
+}
+
+.ja-ss-item {
+	display: block;
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	left: 0;
+	width: 100%;
+	min-height: 260px;
+	z-index: 1;
+	backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+.ja-ss-item.prev {
+	display: block;
+}
+
+.ja-ss-item.next {
+	display: block;
+}
+
+.ja-ss-item.curr {
+	z-index: 2; /* IE7,8 */
+}
+
+.ja-ss-item img {
+	background: #fff;
+	width: 100%;
+	max-width: 100%;
+}
+
+.ja-ss-mask {
+  
+}
+
+.ja-ss-mask.active {
+}
+
+.ja-ss-desc {
+  color: #000;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: @t3-global-margin * 1.5;
+  margin-right: @t3-global-margin * 1.5;
+  position: absolute;
+  text-align: left;
+  top: 50px;
+  z-index: 2;
+
+  @media (min-width: @screen-md) {
+    top: 220px;
+  }
+
+  @media (min-width: @screen-lg) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  h3 {
+    background: rgba(0,0,0,0.8);
+    color: @white;
+    font-size: @font-size-small;
+    margin: 0;
+    padding: 5px 10px;
+    display: inline;
+  }
+}
+
+.ja-ss-desc .ja-ss-caption {
+  margin-top: 5px;
+  .clearfix();
+
+  span {
+    background: @white;
+    clear: both;
+    display: block;
+    float: left;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 1px;
+    padding: 0 5px;
+    text-transform: uppercase;
+
+    @media (min-width: @screen-md) {
+      font-size: 40px;
+    }
+  }
+}
+
+.ja-ss-desc h3 a {
+	color: inherit;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.ja-ss-desc p {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 10px 0;
+}
+
+.ja-ss-btns {
+	z-index: 10;
+	position: absolute;
+  top: 123px;
+	left: @t3-global-margin * 1.5;
+
+  @media (min-width: @screen-md) {
+    top: 347px;
+  }
+
+  @media (min-width: @screen-lg) {
+    left: 100px;
+  }
+}
+
+.ja-ss-btns span {
+	background: @black;
+	color: @white;
+	cursor: pointer;
+	display: block;
+	height: 40px;
+	margin: 00;
+	padding: 0;
+	width: 40px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  .opacity(0.8);
+
+  &:hover {
+    .opacity(1);
+  }
+
+  i {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.ja-ss-btns .ja-ss-prev {
+  &:before {
+    border-right: 20px solid rgba(0, 0, 0, 0);
+    border-top: 40px solid #000000;
+    content: "";
+    left: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.ja-ss-btns .ja-ss-next {
+  left: 61px;
+  &:before {
+    border-bottom: 40px solid #000000;
+    border-left: 20px solid rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+  }
+}
+.view-featured .ja-ss-thumbs-wrap {
+	//large screen control
+	@media screen and (min-width: @screen-lg) {
+		background: transparent;
+		bottom: 300px;
+	}
+
+	.ja-ss-thumbs .ja-ss-thumb.active {
+		border-color: @brand-primary;
+	}
+}
+
+.ja-ss-thumbs-wrap {
+	height: 72px;
+	width: 100%;
+	clear: both;
+	position: absolute;
+	bottom: 0px;
+	overflow: hidden;
+	z-index: 9;
+	background: url("@{t3-image-path}/white-trans.png") 0 0 repeat;
+
+  @media (max-width: @screen-sm-max) {
+    display: none;
+  }
+}
+
+/* dynamic classes */
+.ja-ss-thumb-height {
+
+}
+
+.ja-ss-thumb-width {
+
+}
+
+.ja-ss-thumbs {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%; /* horizontal thumbnails */
+	white-space: nowrap;
+	text-align: center;
+}
+
+.ja-ss-thumbs .ja-ss-thumb {
+	display: inline-block;
+	overflow: hidden;
+	margin: 5px 3px;
+	border: 1px solid #fafafa;
+	text-align: center;
+	vertical-align: bottom;
+	cursor: pointer;
+
+}
+
+.ja-ss-thumbs .ja-ss-thumb img {
+
+}
+
+.ja-ss-thumbs .ja-ss-thumb.active {
+	border: 1px solid #db7030;
+}
+
+.ja-ss-thumbs .ja-ss-thumb.active img {
+	opacity: 1;
+}

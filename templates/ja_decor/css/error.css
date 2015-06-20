@@ -1,0 +1,145 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Decor Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+
+
+
+body.page-error {
+  font-family: sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  color: #555;
+  background: url("../images/bg.gif") repeat top left;
+}
+
+a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/* Error code */
+
+
+/* Error message */
+.error-message h2 {
+  font-size: 25px;
+}
+
+.error-message a {
+
+}
+
+.error-message a:hover,
+.error-message a:focus, 
+.error-message a:active {
+  text-decoration: underline;
+}
+
+
+div.error {
+  text-align: center;
+  margin-top: 17%;
+}
+
+
+div.error .error-code{
+  font-size: 130px;
+}
+
+
+div.error .error-code span {
+  background: #0b96f3;
+  color: #fff;
+  padding: 0 15px;
+  margin: 0 48px;
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  div.error .error-code span {
+    background: transparent;
+    font-size: 100px;
+    color: #0b96f3;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.error .error-code span:before {
+    display: none;
+  }
+  div.error .error-code span:after {
+    display: none;
+  }
+}
+
+div.error .error-code span:before {
+  content: "";
+  border-right:38px solid #0b96f3;
+  border-bottom: 147px solid transparent;
+  position: absolute;
+  left: -38px;
+  top: 0px;
+}
+
+div.error .error-code span:after {
+  content: "";
+  border-left:38px solid #0b96f3;
+  border-top: 146px solid transparent;
+  position: absolute;
+  right: -38px;
+  top:0px;
+}
+
+div.error .error-code span.errorcode-first:before {
+  display: none;
+}
+
+div.error .error-code span.errorcode-first {
+  margin: 0;
+  padding: 0 20px;
+}
+
+div.error .error-code span.errorcode-last:after {
+  display: none;
+}
+
+div.error .error-code span.errorcode-last {
+  margin: 0;
+  padding: 0 20px;
+}
+
+
+div.error #errorboxbody {
+  margin-top: 15px;
+}
+
+div.error #errorboxbody a {
+  position: relative;
+  top: 30px;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 13px 17px 13px 40px;
+  background: url(../images/home-error.png) no-repeat 10px 10px #0b96f3;
+}
+
+
+div.error #errorboxbody a:hover,
+div.error #errorboxbody a:focus, 
+div.error #errorboxbody a:active {
+  background: url(../images/home-error.png) no-repeat 10px 10px #1BA6FF;
+}

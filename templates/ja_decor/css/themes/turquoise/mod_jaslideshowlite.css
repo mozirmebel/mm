@@ -1,0 +1,234 @@
+
+
+.ja-ss-slideshow {
+  position: relative;
+  height: 309px;
+}
+.ja-ss-loading:before {
+  content: "";
+  display: block;
+  background: url("../../../images/slideloading.gif") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+.ja-ss-wrap {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.ja-ss-items {
+  width: 100%;
+}
+.ja-ss-item {
+  display: block;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 260px;
+  z-index: 1;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.ja-ss-item.prev {
+  display: block;
+}
+.ja-ss-item.next {
+  display: block;
+}
+.ja-ss-item.curr {
+  z-index: 2;
+  
+}
+.ja-ss-item img {
+  background: #fff;
+  width: 100%;
+  max-width: 100%;
+}
+.ja-ss-desc {
+  color: #000;
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: absolute;
+  text-align: left;
+  top: 50px;
+  z-index: 2;
+}
+@media (min-width: 992px) {
+  .ja-ss-desc {
+    top: 220px;
+  }
+}
+@media (min-width: 1400px) {
+  .ja-ss-desc {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+.ja-ss-desc h3 {
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-size: 12px;
+  margin: 0;
+  padding: 5px 10px;
+  display: inline;
+}
+.ja-ss-desc .ja-ss-caption {
+  margin-top: 5px;
+}
+.ja-ss-desc .ja-ss-caption:before,
+.ja-ss-desc .ja-ss-caption:after {
+  content: " ";
+  display: table;
+}
+.ja-ss-desc .ja-ss-caption:after {
+  clear: both;
+}
+.ja-ss-desc .ja-ss-caption span {
+  background: #ffffff;
+  clear: both;
+  display: block;
+  float: left;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 1px;
+  padding: 0 5px;
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .ja-ss-desc .ja-ss-caption span {
+    font-size: 40px;
+  }
+}
+.ja-ss-desc h3 a {
+  color: inherit;
+  line-height: normal;
+  text-decoration: none;
+}
+.ja-ss-desc p {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 10px 0;
+}
+.ja-ss-btns {
+  z-index: 10;
+  position: absolute;
+  top: 123px;
+  left: 30px;
+}
+@media (min-width: 992px) {
+  .ja-ss-btns {
+    top: 347px;
+  }
+}
+@media (min-width: 1400px) {
+  .ja-ss-btns {
+    left: 100px;
+  }
+}
+.ja-ss-btns span {
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  margin: 00;
+  padding: 0;
+  width: 40px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.ja-ss-btns span:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.ja-ss-btns span i {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.ja-ss-btns .ja-ss-prev:before {
+  border-right: 20px solid rgba(0, 0, 0, 0);
+  border-top: 40px solid #000000;
+  content: "";
+  left: 100%;
+  position: absolute;
+  top: 0;
+}
+.ja-ss-btns .ja-ss-next {
+  left: 61px;
+}
+.ja-ss-btns .ja-ss-next:before {
+  border-bottom: 40px solid #000000;
+  border-left: 20px solid rgba(0, 0, 0, 0);
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+@media screen and (min-width: 1400px) {
+  .view-featured .ja-ss-thumbs-wrap {
+    background: transparent;
+    bottom: 300px;
+  }
+}
+.view-featured .ja-ss-thumbs-wrap .ja-ss-thumbs .ja-ss-thumb.active {
+  border-color: #1abc9c;
+}
+.ja-ss-thumbs-wrap {
+  height: 72px;
+  width: 100%;
+  clear: both;
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+  z-index: 9;
+  background: url("../../../images/white-trans.png") 0 0 repeat;
+}
+@media (max-width: 991px) {
+  .ja-ss-thumbs-wrap {
+    display: none;
+  }
+}
+
+.ja-ss-thumbs {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  
+  white-space: nowrap;
+  text-align: center;
+}
+.ja-ss-thumbs .ja-ss-thumb {
+  display: inline-block;
+  overflow: hidden;
+  margin: 5px 3px;
+  border: 1px solid #fafafa;
+  text-align: center;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+.ja-ss-thumbs .ja-ss-thumb.active {
+  border: 1px solid #db7030;
+}
+.ja-ss-thumbs .ja-ss-thumb.active img {
+  opacity: 1;
+}

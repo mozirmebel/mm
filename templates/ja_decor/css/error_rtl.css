@@ -1,0 +1,32 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Decor Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+
+div.error .error-code span.errorcode-last:before {
+  display: none;
+}
+
+div.error .error-code span:before {
+  left: -125px;
+}
+
+div.error .error-code span.errorcode-last:after {
+  display: block;
+}
+
+div.error .error-code span.errorcode-first:before {
+  left: -130px;
+  display: block;
+}
+
+div.error .error-code span.errorcode-first:after {
+  display: none;
+}

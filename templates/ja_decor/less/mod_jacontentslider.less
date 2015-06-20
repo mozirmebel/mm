@@ -1,0 +1,103 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// VARIABLES & MIXINS
+// ------------------
+@import "vars.less"; // Modify this for custom colors, font-sizes, etc
+
+.ja-btn-tabs {
+  margin: @t3-global-margin*2 0 0 0;
+
+  a {
+    padding: (@t3-global-padding/4) (@t3-global-padding/2);
+    border: 1px solid @gray;
+    color: @gray-light;
+
+    &:hover, &:focus {
+      color: @white;
+      text-decoration: none;
+      border-color: @gray-lighter;
+    }
+  }
+}
+
+.ja_slidetitle {
+  font-family: @font-family-serif;
+  font-weight: 700;
+
+  a:hover {
+    text-decoration: none;
+    color: @brand-primary;
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  .jsslide {
+    padding-left: @t3-global-padding * 2;
+    padding-right: @t3-global-padding * 2;
+  }
+
+  .testimonial-box h4 {
+    font-size: @font-size-base;
+  }
+}
+
+.ja-btn-control {
+  z-index: 10001;
+
+  .slide-control {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: @black;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    position:relative;
+
+    &.next {
+
+      &:before {
+        content:"";
+        position: absolute;
+        border-right: 20px solid transparent;
+        border-top: 40px solid @black;
+        left: 100%;
+        top: 0;
+
+        //Mobile screen control
+        @media screen and (max-width: @screen-xs) {
+          display:none;
+        }
+      }
+      &:hover:before {
+        border-top-color: @brand-primary; 
+      }
+    }
+
+    &.prev {
+      &:before {
+        content:"";
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-bottom: 40px solid @black;
+        right: 100%;
+        top: 0;
+
+        //Mobile screen control
+        @media screen and (max-width: @screen-xs) {
+          display: none;
+        }
+      }
+
+      &:hover:before {
+        border-bottom-color: @brand-primary; 
+      }
+    }
+
+    &:hover {
+      background:@brand-primary;
+    }
+  }
+}

@@ -1,0 +1,172 @@
+/**
+ * $JA#COPYRIGHT$
+ */
+ 
+// ------------------------------------------------------
+// RTL STYLES
+// ------------------------------------------------------
+
+.logo-image {
+  background-size: 100% auto;
+}
+
+
+.has-masthead .t3-mainbody,
+.t3-mainbody > .row {
+  background-size: 100% auto;
+}
+
+.off-canvas-left.t3-off-canvas {
+  display: none;
+}
+
+.off-canvas-left .off-canvas-left.t3-off-canvas {
+  display: block;
+}
+
+// EASYBLOG
+// ------------------------------------------------------
+
+
+// MIJOSHOP
+// ------------------------------------------------------
+// Header 
+#header_oc #search_oc input[type="text"] {
+  padding-right: 10px;
+  padding-left: 1px;
+}
+
+// Product List
+.product-list .image {
+  float: right;
+}
+
+.product-list > div.col-xs-12 .desc {
+  padding: 0 30px 0 0;
+}
+
+.select-box:before {
+  right: auto;
+  left: 0;    
+  background-position: left center;
+}
+
+.product-list .price {
+  float: left;
+}
+
+#container_oc {
+  text-align: right;
+}
+
+.product-list .wishlist, .product-list .compare, .product-list .cart {
+  float: right;
+}
+
+.product-list .wishlist a, .product-list .compare a {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.product-list .image:before {
+  left: 0;
+  border-left: 10px solid @white;
+  border-right: 0;
+}
+
+// Product Detail
+.product-info .image {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+.product-info .review .share .addthis_default_style {
+  float: right;
+}
+
+.product-info .cart .btn,
+.product-info a.wishlist, .product-info a.compare {
+  float: right;    
+  margin-left: 0;    
+  margin-right: 10px;
+} 
+
+// Shopping Cart
+table.radio tr td:first-child input {
+  margin-right: 0;
+}
+
+.cart-total tr td,
+.cart-info thead .name, .cart-info thead .model, .cart-info thead .quantity,
+.cart-info tbody .name, .cart-info tbody .model, .cart-info tbody .quantity {
+  text-align: right;
+}
+
+
+#footer_oc .column ul {
+  margin-right: 8px;
+  margin-left: 0;
+  padding-right: 12px;
+  padding-left: 0;
+}
+
+.about-box .carousel-control.right, 
+.article-slideshow .carousel-control.right {
+  right: auto !important;
+  left: 102px !important;
+
+  &:before {
+    border-left: 20px solid transparent;
+    left: -20px;
+    right: auto; 
+  }
+}
+
+.about-box .carousel-control.left,
+.article-slideshow .carousel-control.left {
+  left: 40px !important;
+  right: auto !important;
+  &:before {
+    border-right: 20px solid transparent;
+    right: -20px; 
+  }
+}
+
+.t3-footer .acymailing_module .acymailing_form .subbutton {
+  .fa-angle-right:before {
+    content: "\f104";
+  }
+}
+
+.ie8 {
+
+  .testimonial-box .ja-btn-control .slide-control.next {
+    &:before {
+      right: 20px;
+      border-left: 20px solid @black;
+      border-right: 20px solid transparent;
+    }
+    &:hover:before {
+      border-left: 20px solid @brand-primary;
+      border-right: 20px solid transparent;  
+    }
+  }
+
+  .testimonial-box .ja-btn-control .slide-control.prev {
+    &:before {
+      left: 20px;
+      border-right: 20px solid @black;
+      border-left: 20px solid transparent;
+    }
+    &:hover:before {
+      border-right: 20px solid @brand-primary;
+      border-left: 20px solid transparent;     
+    }
+  }
+
+  .navbar-nav > li.nav-highlight > a:before, .navbar-nav a.nav-highlight:before {
+    border-right: 0;
+    border-left: @black 15px solid;
+  }
+
+}

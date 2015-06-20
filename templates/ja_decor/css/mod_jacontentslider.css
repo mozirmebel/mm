@@ -1,0 +1,81 @@
+
+
+.ja-btn-tabs {
+  margin: 40px 0 0 0;
+}
+.ja-btn-tabs a {
+  padding: 5px 10px;
+  border: 1px solid #555555;
+  color: #999999;
+}
+.ja-btn-tabs a:hover,
+.ja-btn-tabs a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  border-color: #eeeeee;
+}
+.ja_slidetitle {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+.ja_slidetitle a:hover {
+  text-decoration: none;
+  color: #0b96f3;
+}
+@media (max-width: 991px) {
+  .jsslide {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .testimonial-box h4 {
+    font-size: 14px;
+  }
+}
+.ja-btn-control {
+  z-index: 10001;
+}
+.ja-btn-control .slide-control {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background: #000000;
+  text-align: center;
+  line-height: 40px;
+  display: inline-block;
+  position: relative;
+}
+.ja-btn-control .slide-control.next:before {
+  content: "";
+  position: absolute;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #000000;
+  left: 100%;
+  top: 0;
+}
+@media screen and (max-width: 480px) {
+  .ja-btn-control .slide-control.next:before {
+    display: none;
+  }
+}
+.ja-btn-control .slide-control.next:hover:before {
+  border-top-color: #0b96f3;
+}
+.ja-btn-control .slide-control.prev:before {
+  content: "";
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-bottom: 40px solid #000000;
+  right: 100%;
+  top: 0;
+}
+@media screen and (max-width: 480px) {
+  .ja-btn-control .slide-control.prev:before {
+    display: none;
+  }
+}
+.ja-btn-control .slide-control.prev:hover:before {
+  border-bottom-color: #0b96f3;
+}
+.ja-btn-control .slide-control:hover {
+  background: #0b96f3;
+}

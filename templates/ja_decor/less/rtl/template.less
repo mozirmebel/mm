@@ -1,0 +1,29 @@
+
+
+html[dir=rtl] .items-leading .leading.leading-1 .item-image,
+html[dir=rtl] .items-leading .leading.leading-3 .item-image,
+html[dir=rtl] .items-leading .leading.leading-5 .item-image,
+html[dir=rtl] .items-leading .leading.leading-7 .item-image {
+  float: left;
+}
+
+html[dir=rtl] .items-leading .leading.leading-1 .item-desc:before,
+html[dir=rtl] .items-leading .leading.leading-3 .item-desc:before,
+html[dir=rtl] .items-leading .leading.leading-5 .item-desc:before,
+html[dir=rtl] .items-leading .leading.leading-7 .item-desc:before{
+  content: "";
+  border-left: 0;
+  border-right: 10px solid @white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  right:100%;
+  top: 20px;
+  width: 10px;
+}
+
+html[dir=rtl] .items-leading .leading.leading-0 .item-desc:before,
+html[dir=rtl] .items-leading .leading.leading-2 .item-desc:before,
+html[dir=rtl] .items-leading .leading.leading-4 .item-desc:before,
+html[dir=rtl] .items-leading .leading.leading-6 .item-desc:before{
+}

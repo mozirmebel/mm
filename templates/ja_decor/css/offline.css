@@ -1,0 +1,234 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Decor Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+ 
+/**
+ * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+body {
+	margin: 0; padding: 0;
+	font-family: Arial, Helvetica, Sans Serif; font-size: 78%;
+	color: #fff;
+	display: block;
+	background: url("../images/bg.gif") repeat;
+	font-size: 14px;
+}
+
+img  {
+	border: 0 none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* -- id styles ------------------------------------- */
+
+#frame {
+	margin: 15% auto 0;
+	width: 450px;
+	padding: 20px;
+	background: #0b96f3;
+}
+
+#frame img {
+	max-width: 100%;
+	height: auto;
+	position: relative;
+}
+
+#frame form {
+	text-align: left;
+}
+
+/* -- offline styles ---------------------------------- */
+#offline-title {
+	border-bottom: 1px solid #fff;
+	text-align: center;
+}
+
+#offline-title h1 {
+	margin: 0;
+	display: inline-block;
+	color: #fff;
+	position: relative;
+	top: 0px;
+	margin-bottom: 20px;
+}
+
+
+#offline-img {
+	background: #f0f0f0;
+	text-align: center;
+}
+
+#offline-content .offline-des {
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+}
+
+#form-login {
+	margin-top: 15px;
+}
+
+.input #form-login-username {
+	float: left;
+	width: 45%;
+	padding-top: 0;
+	margin-left: 10px;
+}
+
+.input #form-login-password {
+	display: inline-block;
+	width: 45%;
+	text-align: left;
+	padding-left: 0;
+	margin-bottom: 20px;
+	padding-top: 0;
+	margin-left: 20px;
+}
+
+.input #form-login-username label,
+.input #form-login-password label {
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+
+#remember {
+	width: 10px;
+	float: left;
+	margin-left: 0px;
+	margin-right: 5px;
+}
+
+p#form-login-remember {
+	padding: 11px;
+	float: left;
+}
+
+#form-login-remember label {
+	display: inline;
+	line-height: 19px;
+}
+
+p#submit-buton {
+    float: right;
+    padding: 0;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+#submit-buton .login {
+	margin-right: 3px;
+	padding: 10px 15px;
+	border: 0;
+	background: #075A91;
+	color: #fff;
+	font-weight: bold;
+}
+
+#submit-buton .login:hover {
+	background: #0978C2;
+}
+
+/* -- form styles ----------------------------------- */
+
+form    { margin: auto; }
+form p  { margin: 0; padding: 0; }
+form fieldset { border: 0 none; margin: 0em; padding: 0.2em; text-align: center;}
+input 		  { padding: 1px; }
+input.button  { width: auto; cursor: pointer; }
+
+label   { margin: 5px 0px 2px 0px; width: 10em; display: block;}
+form p  { padding: 0.2em 0 0.2em 0; }
+form br  { display: none; }
+input    { border: 0; }
+input:hover,input:focus { border-color: #0b96f3;}
+
+#frmlogin	      { margin: 0 10px 0 10px;  }
+#frmlogin fieldset.button { text-align: right; }
+
+.inputbox {
+	padding: 10px 6px;
+	width: 93%;
+}
+
+/* -- message styles ----------------------------------- */
+
+#system-message {
+	background: none repeat scroll 0 0 #f0f0f0;
+	margin: 10px auto 0;
+	text-align: left;
+	width: 480px;
+	color: #333;
+}
+
+.alert.alert-warning {
+	padding: 20px;
+}
+
+.alert.alert-warning h4 {
+	margin: 0;
+}
+
+.alert.alert-warning .close {
+	display: none;
+}
+
+.alert.alert-warning p {
+	margin-bottom: 0;
+}
+
+#system-message .error {
+	padding: 20px 20px;
+}
+
+#system-message .error.message {
+	padding: 0 20px 20px 20px;
+}
+
+#system-message dt {
+	color: #0b96f3;
+	font-weight: bold;
+}
+
+#system-message dd {
+	margin: 0px;
+}
+
+.login {
+	margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+	#frame {
+		width: 285px;
+	}
+
+	.input #form-login-username {
+		display: block;
+		width: auto;
+		padding-left: 30px;
+	}
+
+	.input #form-login-password {
+		display: block;
+		width: auto;
+		padding-left: 30px;
+	}
+
+	#submit-buton .login {
+		margin-right: 30px;
+	}
+}
